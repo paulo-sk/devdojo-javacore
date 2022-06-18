@@ -1,0 +1,26 @@
+Todas os erros que aparecem no java, sao classes filhas da classe Throwable
+
+Throwable
+    >error
+    >Execption
+        >RuntimeException //unchecked (geralmente sao erros do programador)
+        >resto. //checked
+
+Error:
+    error sao coisas que não tem o que fazer. Error nao tem tratamento.
+    exemplos de errors: stackoverflow, outOfMemoryError, internalError.
+    Quando error acontece, o programa simplesmente para, nao tem como resolver em tempo
+    de execucao.
+
+RuntimeExceptions:
+    São exceptions nao checadas (Uncheked exceptions), que nao deveriam acontecer. Geralmente, sao erros de codigo
+    feito pelo programador. Exemples: outOfIndexBound, é quando por exemplo vc tenta acessar um index
+    inexistente dentro de um array. Se o array tem tamanho 10 e vc tentar acessar o index 15, vai dar
+    essa exception ai. E isso é erro de sintaxe ou logica. RuntimeException (tempo de execucao) tambem
+    nao devem ser tratadas, tem que ser corrigida no codigo mesmo.
+
+Exceptions (resto):
+    Checked exceptions, sao as que acontece onde o desenvolvedor nao tem culpa, sao erros que ocorrem
+    Essas excessoes orbigatoriamente devem ser tratadas para que o programa possa compilar.
+
+
