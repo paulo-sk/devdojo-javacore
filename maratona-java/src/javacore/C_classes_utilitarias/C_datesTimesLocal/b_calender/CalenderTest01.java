@@ -1,4 +1,4 @@
-package javacore.C_classes_utilitarias.C_dates.b_calender;
+package javacore.C_classes_utilitarias.C_datesTimesLocal.b_calender;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -19,5 +19,10 @@ public class CalenderTest01 {
         System.out.println("Dia da semana: "+c.get(Calendar.DAY_OF_WEEK));
         System.out.println("Dia do mes: "+c.get(Calendar.DAY_OF_MONTH));
         System.out.println("Dia do ano: "+c.get(Calendar.DAY_OF_YEAR));
+        System.out.println("Dia da semana no mes: "+c.get(Calendar.DAY_OF_WEEK_IN_MONTH));
+        c.add(Calendar.DAY_OF_MONTH, 1); //+1 dia do mes adicionado.
+        System.out.println("Dia do mes +1: "+ c.get((Calendar.DAY_OF_MONTH)));
+        c.add(Calendar.DAY_OF_MONTH, 365); //365 dias adicionados.
+        System.out.println("Ano: "+ c.get((Calendar.YEAR)));
     }
 }
